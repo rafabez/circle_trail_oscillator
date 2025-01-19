@@ -4,9 +4,10 @@ let osc, playing = false;
 function setup() {
     createCanvas(windowWidth, windowHeight);
     noFill();
+
+    // Create the oscillator but don't start it until interaction
     osc = new p5.Oscillator('sine');
     osc.amp(0);
-    osc.start();
 }
 
 function draw() {
@@ -33,7 +34,11 @@ function draw() {
 }
 
 function mousePressed() {
+    // Start the oscillator only when the user interacts
     if (!playing) {
+        if (!osc.started) {
+            osc.start(); // Start the oscillator
+        }
         osc.amp(0.5, 0.05); // Fade in
         playing = true;
     }
