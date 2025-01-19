@@ -1,6 +1,6 @@
 # Circle_Trail_Oscillator
 
-[**Live Demo**](https://rafabeznos.com.br/fx/sound/circle_trail_oscillator/index.html)
+[**Live Demo**](https://rafabeznos.com.br/fx/sound/circle_trail_oscillator)
 
 Circle_Trail_Oscillator is an interactive audio-visual web application that combines dynamic visuals and sound synthesis. It allows users to create mesmerizing circle trails on a canvas while generating real-time audio based on mouse or touch interactions. The project leverages the p5.js library for visuals and p5.sound for audio synthesis.
 
